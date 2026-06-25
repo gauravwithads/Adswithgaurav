@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://adswithgaurav-ncr.github.io/sitemap.xml
