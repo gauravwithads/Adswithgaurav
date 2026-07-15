@@ -757,7 +757,7 @@
         <p>Free 20-minute strategy call. No pressure, no jargon — just a clear view of what's possible with your budget.</p>
         <p>Or call/WhatsApp directly: <strong>+91 95403 62825</strong></p>
       </div>
-      <form class="cta-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Request received ✓';">
+      <form class="cta-form" id="audit-form">
         <label for="name">Your Name</label>
         <input id="name" type="text" placeholder="Full name" required>
         <label for="business">Business Type</label>
@@ -813,4 +813,29 @@
 <a href="https://wa.me/919540362825" class="wa-float" aria-label="Chat on WhatsApp">💬</a>
 
 </body>
+<script>
+document.getElementById('audit-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById('name').value;
+  const business = document.getElementById('business').value;
+  const city = document.getElementById('city').value;
+  const phone = document.getElementById('phone').value;
+
+  const formData = new URLSearchParams();
+  formData.append('entry.2005620554', name);
+  formData.append('entry.1045781291', business);
+  formData.append('entry.1065046570', city);
+  formData.append('entry.1166974658', phone);
+
+  fetch('https://docs.google.com/forms/d/e/1FAIpQLScyJ-51yy3QTE11KjQBEbtty_gwWwVMMzlPhE7AA3rXJ3NHyw/formResponse', {
+    method: 'POST',
+    mode: 'no-cors',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: formData.toString()
+  }).finally(function() {
+    window.location.href = 'https://gauravwithads.github.io/Adswithgaurav/thank-you.html';
+  });
+});
+</script>
 </html>
