@@ -899,23 +899,16 @@
 <script>
 document.getElementById('audit-form').addEventListener('submit', function(e) {
   e.preventDefault();
-
   const name = document.getElementById('name').value;
   const business = document.getElementById('business').value;
   const city = document.getElementById('city').value;
   const phone = document.getElementById('phone').value;
 
-  const formData = new URLSearchParams();
-  formData.append('entry.2005620554', name);
-  formData.append('entry.1045781291', business);
-  formData.append('entry.1065046570', city);
-  formData.append('entry.1166974658', phone);
-
-  fetch('https://docs.google.com/forms/d/e/1FAIpQLScyJ-51yy3QTE11KjQBEbtty_gwWwVMMzlPhE7AA3rXJ3NHyw/formResponse', {
+  fetch('https://script.google.com/macros/s/AKfycbzJ_UgmX68HhCNnEiDpMk5QEvY-RRzY8jK636Y5JaVW-sGjvYT5PNUCF1B_5eTBB4Hb/exec', {
     method: 'POST',
     mode: 'no-cors',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: formData.toString()
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name: name, business: business, city: city, phone: phone })
   }).finally(function() {
     window.location.href = 'https://gauravwithads.github.io/Adswithgaurav/thank-you.html';
   });
