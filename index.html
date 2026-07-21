@@ -37,6 +37,24 @@
   "url": "https://gauravwithads.github.io/Adswithgaurav/"
 }
 </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What is Facebook advertising?", "acceptedAnswer": { "@type": "Answer", "text": "A paid way to show your business to people on Facebook based on their interests, location, age, and behaviour, instead of waiting for people to find you organically." } },
+    { "@type": "Question", "name": "How does Facebook advertising work?", "acceptedAnswer": { "@type": "Answer", "text": "You create an ad, set a budget, choose an audience, and Meta shows your ad to matching people. You pay based on impressions or results, with real-time tracking." } },
+    { "@type": "Question", "name": "What is Meta advertising?", "acceptedAnswer": { "@type": "Answer", "text": "Running ads across Meta's apps, mainly Facebook and Instagram and sometimes Messenger, all managed from one platform called Meta Ads Manager." } },
+    { "@type": "Question", "name": "What are Instagram ads and how do they work?", "acceptedAnswer": { "@type": "Answer", "text": "Paid posts, Reels, or Stories shown to people even if they don't follow you, set up through the same Meta Ads Manager used for Facebook ads." } },
+    { "@type": "Question", "name": "How much budget do I need to start?", "acceptedAnswer": { "@type": "Answer", "text": "Most small businesses start with ₹300–₹500 per day as a testing budget, enough for the algorithm to learn which audience and creative perform best before scaling up." } },
+    { "@type": "Question", "name": "How can I reduce my cost per lead?", "acceptedAnswer": { "@type": "Answer", "text": "The biggest levers are a sharper offer, a better-targeted audience, and stronger creative. Testing a few variations and pausing what underperforms brings cost per lead down over 2–3 weeks." } },
+    { "@type": "Question", "name": "What is cost per lead (CPL)?", "acceptedAnswer": { "@type": "Answer", "text": "The average amount you pay for each person who submits their contact details or enquires through your ad, calculated as total ad spend divided by number of leads." } },
+    { "@type": "Question", "name": "How do I know if my ad budget is being wasted?", "acceptedAnswer": { "@type": "Answer", "text": "Signs include a high cost per result with no improvement over 2+ weeks, low click-through rate, or spending spread too thin across many audiences at once." } },
+    { "@type": "Question", "name": "How can I improve campaign performance?", "acceptedAnswer": { "@type": "Answer", "text": "Focus on one clear goal per campaign, use specific time-bound offers, refresh creative every few weeks, and give campaigns enough time to exit the learning phase before judging results." } },
+    { "@type": "Question", "name": "Should I increase my budget if a campaign is doing well?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, but gradually. Increasing budget by more than 20% at once can reset the learning phase and temporarily hurt performance. Small steady increases scale results more reliably." } }
+  ]
+}
+</script>
 
 <style>
   :root {
@@ -570,6 +588,15 @@
     outline-offset: 2px;
   }
 </style>
+<style>
+#faq { padding: 60px 0; }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-question { width: 100%; text-align: left; background: none; border: none; padding: 18px 4px; font-size: 1.05rem; color: var(--navy); font-weight: 600; cursor: pointer; display: flex; justify-content: space-between; align-items: center; font-family: inherit; }
+.faq-arrow { color: var(--gold); font-size: 1.3rem; margin-left: 12px; flex-shrink: 0; }
+.faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.25s ease; font-size: 0.98rem; color: #2D3748; line-height: 1.6; padding: 0 4px; }
+.faq-answer p { padding-bottom: 18px; margin: 0; }
+</style>
+
 </head>
 <body>
 
@@ -772,6 +799,67 @@
     </div>
   </div>
 </section>
+<section id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Frequently Asked Questions</p>
+      <h2>Everything you need to know about Meta Ads</h2>
+      <p>Simple answers to the questions we get asked most.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What is Facebook advertising?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>A paid way to show your business to people on Facebook based on their interests, location, age, and behaviour, instead of waiting for people to find you organically.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How does Facebook advertising work?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>You create an ad, set a budget, choose an audience, and Meta shows your ad to matching people. You pay based on impressions or results, with real-time tracking.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What is Meta advertising?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>Running ads across Meta's apps, mainly Facebook and Instagram and sometimes Messenger, all managed from one platform called Meta Ads Manager.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What are Instagram ads and how do they work?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>Paid posts, Reels, or Stories shown to people even if they don't follow you, set up through the same Meta Ads Manager used for Facebook ads.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How much budget do I need to start?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>Most small businesses start with ₹300–₹500 per day as a testing budget, enough for the algorithm to learn which audience and creative perform best before scaling up.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How can I reduce my cost per lead?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>The biggest levers are a sharper offer, a better-targeted audience, and stronger creative. Testing a few variations and pausing what underperforms brings cost per lead down over 2–3 weeks.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">What is cost per lead (CPL)?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>The average amount you pay for each person who submits their contact details or enquires through your ad, calculated as total ad spend divided by number of leads.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How do I know if my ad budget is being wasted?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>Signs include a high cost per result with no improvement over 2+ weeks, low click-through rate, or spending spread too thin across many audiences at once.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">How can I improve campaign performance?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>Focus on one clear goal per campaign, use specific time-bound offers, refresh creative every few weeks, and give campaigns enough time to exit the learning phase before judging results.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" onclick="toggleFaq(this)">Should I increase my budget if a campaign is doing well?<span class="faq-arrow">+</span></button>
+        <div class="faq-answer"><p>Yes, but gradually. Increasing budget by more than 20% at once can reset the learning phase and temporarily hurt performance. Small steady increases scale results more reliably.</p></div>
+      </div>
+    </div>
+  </div>
+</section>  
 
 <footer>
   <div class="wrap">
@@ -794,6 +882,7 @@
         <ul>
           <li>Faridabad, Haryana</li>
           <li>+91 95403 62825</li>
+          <li><a href="mailto:adswithgaurav@gmail.com">adswithgaurav@gmail.com</a></li>
           <li><a href="https://wa.me/919540362825">WhatsApp Us</a></li>
         </ul>
       </div>
@@ -832,4 +921,18 @@ document.getElementById('audit-form').addEventListener('submit', function(e) {
   });
 });
 </script>
+<script>
+function toggleFaq(btn) {
+  const answer = btn.nextElementSibling;
+  const arrow = btn.querySelector('.faq-arrow');
+  const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+  if (isOpen) {
+    answer.style.maxHeight = '0px';
+    arrow.textContent = '+';
+  } else {
+    answer.style.maxHeight = answer.scrollHeight + 'px';
+    arrow.textContent = '−';
+  }
+}
+</script>  
 </html>
