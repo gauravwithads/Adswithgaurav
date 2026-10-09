@@ -588,6 +588,18 @@
     outline: 2px solid var(--gold);
     outline-offset: 2px;
   }
+
+  /* SOCIAL ICONS (FOOTER) */
+  .social-links { display:flex; gap:12px; margin-top:16px; }
+  .social-links a {
+    width:44px; height:44px; border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+    background:rgba(255,255,255,.12); color:#fff; font-size:18px; text-decoration:none;
+    transition:.25s;
+  }
+  .social-links a[aria-label="Facebook"]:hover { background:#1877f2; color:#fff; transform:translateY(-3px); }
+  .social-links a[aria-label="Instagram"]:hover { background:#e1306c; color:#fff; transform:translateY(-3px); }
+  .social-links a[aria-label="Email"]:hover { background:#ea4335; color:#fff; transform:translateY(-3px); }
 </style>
 <style>
 #faq { padding: 60px 0; }
@@ -598,6 +610,7 @@
 .faq-answer p { padding-bottom: 18px; margin: 0; }
 </style>
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
@@ -868,6 +881,11 @@
       <div>
         <div class="footer-logo">AdsWith<span>Gaurav</span></div>
         <p>Meta Ads agency helping local businesses in Faridabad get real, trackable leads from Facebook and Instagram.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/OfficialAdsWithGaurav/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/adswithgaurav/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="mailto:adswithgaurav@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
       </div>
       <div>
         <h4>Quick Links</h4>
